@@ -198,7 +198,7 @@ function mousePressed() {
 function saveGlobal() {
   textSize(50);
   fill(100);
-  text(timeChoice + 'sec', width-width/10, height-25);
+  text(timeChoice + 'sec', width+width/10, height-25);
   //save();
   frameRate(1);
   setTimeout(reloadPage, 1000);
