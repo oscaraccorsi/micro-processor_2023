@@ -59,11 +59,14 @@ function preload() {
   beep = loadSound(baseURLSound + soundList[0]);
   bit = loadSound(baseURLSound + soundList[1]);
 }
-
+//--------------------------------------------------windowResized
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+//-------------------------------------------------------SETUP
 function setup() {
-  let canvas =  createCanvas(1920, 1920);
-  canvas.position(windowWidth/2-width/2, windowHeight/2-height/2);
-  //background(20);
+  let canvas =  createCanvas(windowWidth, windowHeight);
+  
   rectMode(CENTER);
   halfWidth = width/2;
   halfHeight = height/2;
