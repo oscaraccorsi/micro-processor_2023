@@ -72,7 +72,7 @@ function setup() {
   halfHeight = height/2;
   x = random(halfWidth-50, halfWidth+50);
   y = random(halfHeight-50, halfHeight+50);
-  x1 = 0;
+  x1 = 30;
   y1 = height-30;
 
   frameRate(30);
@@ -198,7 +198,7 @@ function mousePressed() {
 function saveGlobal() {
   textSize(50);
   fill(100);
-  text(timeChoice + 'sec', width+width/10, height-25);
+  text(timeChoice + 'sec', width-width/10, height-25);
   //save();
   frameRate(1);
   setTimeout(reloadPage, 1000);
