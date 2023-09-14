@@ -65,7 +65,7 @@ function windowResized() {
 }
 //-------------------------------------------------------SETUP
 function setup() {
-  let canvas =  createCanvas(1920, 1080);
+  let canvas =  createCanvas(windowWidth, windowHeight);
   
   rectMode(CENTER);
   halfWidth = width/2;
